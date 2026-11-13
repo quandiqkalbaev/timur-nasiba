@@ -215,7 +215,10 @@ body {
   color: #3d5c43;
   position: relative;
 }
-.greeting__calendar-days::after {
+.greeting__calendar-days .is-date {
+  position: relative;
+}
+.greeting__calendar-days .is-date::after {
   position: absolute;
   content: "";
   background-image: url("../images/heart.png");
@@ -223,8 +226,9 @@ body {
   background-repeat: no-repeat;
   width: 40px;
   height: 40px;
-  right: 1px;
-  bottom: 25px;
+  left: 50%;
+  top: 50%;
+  margin: -20px 0 0 -20px;
   animation: beating 2000ms infinite forwards;
 }
 @keyframes beating {
@@ -245,7 +249,7 @@ body {
 
 .location {
   padding: 50px 0;
-  background-image: url("../images/diydar.webp");
+  background-image: url("../images/feruza.webp");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;

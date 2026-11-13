@@ -1,6 +1,6 @@
 try {
 	 AOS.init();
-	const TARGET = new Date('2026-08-30T18:00:00');
+	const TARGET = new Date('2026-11-15T18:00:00');
 
 	const pad = n => String(n).padStart(2, '0');
 
